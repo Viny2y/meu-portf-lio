@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#home {
+    background: white;
+}
+
+#sobre, #curriculo, #blog, #contato {
+    background: #ddd;
+    margin: 10px 0;
+}
+
+
+/* Efeito de hover para links */
+a {
+    text-decoration: none;
+    color: #000; /* Cor normal do link */
+    transition: color 0.3s ease, transform 0.3s ease; /* Suaviza a transição de cor e tamanho */
+}
+
+a:hover {
+    color: #ff6347; /* Cor do link quando o mouse passa por cima */
+    transform: scale(1.1); /* Aumenta o tamanho do link */
+}
+
+<!-- Seção "Sobre Mim" -->
+<section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+    <h2>Sobre Mim</h2>
+    <p>Olá, sou Kevin! Sou apaixonado por tecnologia, programação e sempre estou buscando aprender mais sobre cibersegurança e inovação. Aqui você encontra um pouco mais sobre minha trajetória.</p>
+</section>
+
+<!-- Seção "Currículo" -->
+<section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+    <h2>Currículo</h2>
+    <p>Confira minha experiência profissional, formações e as habilidades que desenvolvi ao longo dos anos. Tenho interesse em atuar no desenvolvimento de software e em segurança da informação.</p>
+</section>
+
+<!-- Seção "Blog" -->
+<section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+    <h2>Blog</h2>
+    <p>Aqui compartilho meus pensamentos sobre tecnologia, carreira e outras experiências que me ajudam a crescer e evoluir. Sinta-se à vontade para acompanhar!</p>
+</section>
+
+<!-- Seção "Contato" -->
+<section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo através das formas abaixo. Fico à disposição para novas oportunidades e colaborações.</p>
+</section>
+
+<!-- Seção "Bem-vindo ao meu site" -->
+<section class="welcome">
+    <h1>Bem-vindo ao meu site!</h1>
+</section>
+
+<!-- Inclusão do AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+<!-- Estilos CSS -->
+<style>
+    /* Centraliza a seção "Bem-vindo ao meu site" */
+    .welcome {
+        display: flex; /* Usando flexbox para centralizar */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100vh; /* Define a altura da seção como 100% da altura da tela */
+        text-align: center; /* Garante que o texto do título seja centralizado */
+    }
+
+    .welcome h1 {
+        font-size: 2em; /* Ajuste o tamanho da fonte do título */
+        margin: 0; /* Remove o espaço extra ao redor do título */
+    }
+
+    /* Estilo geral para as seções */
+    section {
+        background-color: #f4f4f4; /* Fundo suave */
+        padding: 20px; /* Espaçamento interno */
+        margin: 20px 0; /* Espaçamento entre seções */
+        border-radius: 8px; /* Bordas arredondadas */
+    }
+
+    /* Ajuste para telas pequenas */
+    @media (max-width: 600px) {
+        .welcome h1 {
+            font-size: 1.5em; /* Reduz o tamanho do título em telas pequenas */
+        }
+    }
+</style>
+
+.imagem-banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    .imagem-pequena {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .imagem-pequena img {
+        width: 50%;
+        max-width: 300px; /* Define um tamanho máximo */
+        height: auto;
+        border-radius: 10px; /* Deixa as bordas arredondadas */
+    }
+    
+    .imagem-pequena {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .imagem-pequena img {
+        width: 50%;
+        max-width: 300px; /* Define um tamanho máximo */
+        height: auto;
+        border-radius: 10px; /* Deixa as bordas arredondadas */
+    }
+    
+    .imagem-pequena {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .imagem-pequena img {
+        width: 50%;
+        max-width: 300px; /* Define um tamanho máximo */
+        height: auto;
+        border-radius: 10px; /* Deixa as bordas arredondadas */
+    }
+    
+    .container-imagens {
+        display: flex;  
+        justify-content: space-between; /* Distribui as imagens igualmente */
+        align-items: center;  
+        margin: 30px auto;  
+        width: 80%; /* Define uma largura máxima para evitar que fiquem muito grandes */
+    }
+    
+    .container-imagens img {
+        width: 30%; /* Cada imagem ocupa cerca de 30% da largura do container */
+        border-radius: 10px; /* Bordas arredondadas para um design mais bonito */
+    }
+    
+   
